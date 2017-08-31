@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "placeholders";
+@import "variaveis";
+
+html {
+	font-family: "Helbetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: $cinza-claro;
+	text-decoration: none;
+	@extend %transicao;
+}
+* {
+	box-sizing: border-box;
+}
+header {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	justify-content: space-between;
+	top: 0;
+	padding: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	@extend %transicao;
+	
+	> span {
+		color: $cinza-claro;
+	}
+	> span a {
+		color: $preto;
+	}
+	> span a:hover {
+		color: $cinza-escuro;
+	}
+	
+	@media (max-width: $screen-xs-max) {
+		padding: 15px;
+	}
+
+}
+.small-header {
+	/*background-color: #ffffff;*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1.00)), to(rgba(255, 255, 255, 0.00)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ffffff');
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.wrap-page {
+	margin-top: 160px;
+	padding: 0 40px;
+	
+	@media (max-width: $screen-xs-max) {
+		margin-top: 90px;
+		padding: 0 15px;
+	}
+}
+.page-container {
+	display: flex;
+	width: 100%;
+}
+.page {
+	flex-grow: 1;
+}
+.banner {
+	width: 100%;	
+	margin-bottom: 10vh;
+	
+	img {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	.swiper-pagination-bullet-active {
+		background: $preto;
+	}
+	
+	@media (max-width: $screen-xs-max) {
+		margin-bottom: 5vh;
+	}
+}
+
+h2 {
+	font-size: 1.5rem;
+	
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		font-size: 2rem;
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		font-size: 2.5rem
+	}
+	@media (min-width: $screen-lg-min) {
+		font-size: 3rem
+	}
+}
+aside {
+	width: 20vw;
+	min-width: 200px;
+	position: relative;
+	padding-right: 5vw;
+	
+	@media (max-width: $screen-xs-max) {
+		display: none;
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		
+	}
+	@media (min-width: $screen-lg-min) {
+		width: 25vw;
+	}
+	
+}
+.menu {
+	position: sticky;
+	list-style: none;
+	left: 0;
+	padding: 0;
+	top: 150px;
+}
+.menu li a {
+	display: block;
+	padding: 10px 0;
+}
+.grid-container {
+}
+.grid {
+	padding: 0;
+	margin-bottom: 10vh;
+	list-style: none;
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	justify-content: space-between;
+	margin-bottom: 5vh;
+	
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		justify-content: flex-start;
+	}
+	
+	@media (min-width: $screen-lg-min) {
+		justify-content: flex-start;
+	}
+	
+	
+}
+.pdt {
+    width: auto;
+    margin-bottom: 5vh;
+    
+	max-width: 45%;
+	a {
+		display: block;
+		margin-bottom: 20px;
+		position: relative;
+		
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		margin-right: 3%;
+		max-width: 30%;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-right: 5%;
+		margin-bottom: 8vh;
+		max-width: 20%;
+	}
+	@media (min-width: $screen-xl-min) {
+		margin-right: 5vw;
+		max-width: 300px;
+	}
+}
+.added-qtd {
+	background: rgba(255, 255, 255, 0.85);
+	display: flex;
+	color: darken($verde, 10);
+	font-family: $fonte-secundaria;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.pdt-info {
+	display: flex;
+	justify-content: space-between;
+	
+	h4 {
+		margin: 0 0 1rem 0;
+		
+		@media (max-width: $screen-xs-max) {
+			font-size: 0.8rem;
+		}
+	}
+	.pdt-name {
+		flex-grow: 1;
+		
+		span {
+			color: $cinza-claro;
+			display: block;
+			
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-xs-max) {
+		flex-direction: column;
+	}
+}
+.btn-comprar {
+	background: none;
+	border: 1px solid $cinza-claro;
+	border-radius: $altura-botao / 2;
+	font-size: 0.8rem;
+	font-family: $fonte-secundaria;
+	color: $cinza-claro;
+	line-height: $altura-botao;
+	height: $altura-botao;
+	padding: 0 10px;
+	text-transform: uppercase;
+	@extend %transicao;
+	
+	&:hover {
+		color: $cinza-escuro;
+		border-color: $cinza-escuro;
+	}
+}
+.btn-lg {
+	border-radius: $altura-botao-lg / 2;
+	font-size: 1.2rem;
+	line-height: $altura-botao-lg;
+	letter-spacing: 0.1rem;
+	height: $altura-botao-lg;
+	padding: 0 40px;
+}
+
+// Produto
+.pdt-container {
+	display: flex;
+	
+	.pdt-image {
+		min-width: 50%;
+		text-align: center;
+		
+		@media (max-width: $screen-xs-max) {
+			margin: 0 -30px
+		}
+		
+		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			min-width: 100%;
+		}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	
+	.pdt-info {
+		display: block;
+		margin-top: 20vh;
+		padding-left: 5vw;
+		
+		@media (max-width: $screen-xs-max) {
+			margin-top: 5vh;
+			padding: 0;
+		}
+		
+		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			margin-top: 5vh;
+			padding: 0 10vw;
+		}
+		
+		h4 {
+			font-size: 4rem;
+			margin-left: -9.3vw;
+			margin-bottom: 2rem;
+			word-spacing: 100vw;
+			
+			@media (max-width: $screen-xs-max) {
+				font-size: 2rem;
+				margin-left: 0;
+			}
+			
+			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+				font-size: 3rem;
+				margin-left: 0;
+			}
+		}
+		p {
+			color: $cinza-claro;
+			font-size: 1.2rem;
+			line-height: 1.6;
+			
+			@media (max-width: $screen-xs-max) {
+				font-size: 1rem;
+			}
+		}
+		.price {
+			font-family: $fonte-secundaria;
+			font-size: 1.2rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+	}
+	.pdt-actions {
+		margin: 60px 0;
+	}
+	
+	@media (max-width: $screen-xs-max) {
+		flex-direction: column;
+	}
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		flex-direction: column;
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		
+	}
+	@media (min-width: $screen-lg-min) {
+		
+	}
+}
+
+// Modal
+.pdt-modal {
+	
+	.close {
+		background: none;
+		border: none;
+		font-size: 3rem;
+		font-weight: 100;
+		color: $cinza-claro;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80px;
+		height: 80px;
+		z-index: 1;
+		
+		@media (max-width: $screen-xs-max) {
+			width: 40px;
+			height: 40px;	
+		}
+	}
+	.modal-dialog {
+		width: 100%;
+		max-width: $container-lg;
+		
+		@media (max-width: $screen-xs-max) {
+			margin: 0;
+		}
+	}
+	.modal-content {
+		background: none;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		padding: 60px;
+		
+		@media (max-width: $screen-xs-max) {
+			padding: 30px;
+			padding-top: 0;
+		}
+	}
+}

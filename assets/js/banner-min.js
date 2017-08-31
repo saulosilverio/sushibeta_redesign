@@ -1,0 +1,1 @@
+var swiper=new Swiper("#banner",{pagination:".swiper-pagination",paginationClickable:!0,spaceBetween:0,autoplay:4e3,speed:600,effect:"fade"});
