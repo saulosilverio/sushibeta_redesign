@@ -13,9 +13,63 @@
 </head>
 <body>
 	<header id="header">
-		<a href="index.html">
+		<a href="index.html" class="logo">
 			<img src="assets/img/logo.svg" alt="Logo Sushi Beta"/>
 		</a>
+		<!--
+		<div class="pull-right">
+			<div class="addr-menu hidden-xs">
+				<a data-toggle="dropdown" href="javascript:void(0);">
+					<span class="i-pin"></span>
+					<span class="default-selected-address">Trabalho</span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li class="dropdown-header">Meus endereços</li>
+					<li class="" data-id="57e4277b4ea2fd00030b4535">
+						<a class="js-address-select-link" data-href="/customers/addresses/57e4277b4ea2fd00030b4535" data-select="/customers/addresses/57e4277b4ea2fd00030b4535/select" data-title="Home 1474570107" data-store="SB" href="javascript:void(0)">
+							<span class="i-pin"></span> HOME
+							<br>
+							<small>Rua Pe. João Wislinski, 119 A 14 - 82630494</small>
+						</a>
+					</li>
+					<li class="active" data-id="578cc33be043dd00131c86c7">
+						<a class="js-address-select-link" data-href="/customers/addresses/578cc33be043dd00131c86c7" data-select="/customers/addresses/578cc33be043dd00131c86c7/select" data-title="Trabalho" data-store="SB" href="javascript:void(0)">
+							<span class="i-pin"></span> TRABALHO
+							<br>
+							<small>Rua Parnaiba, 160 A - 80510310</small>
+						</a>
+					</li>
+					<li>
+						<a href="/customers/addresses">+ Adicionar novo</a>
+					</li>
+				</ul>
+			</div>
+			<div class="acc-menu">
+				<a data-toggle="dropdown" href="javascript:void(0);">
+					<div class="mini-profile-pic">
+						<img class="img-circle img-responsive" height="32" width="32" alt="User Profile Image" src="https://www.gravatar.com/avatar/a99abfb7bd2924c4af433f128f3ca0f1?s=128">
+						</div>
+						<span class="mini-profile-name">Olá Saulo Silverio
+	</span>
+					</a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="/customers/edit">Minha Conta</a>
+						</li>
+						<li>
+							<a href="/customers/orders">Meus Pedidos</a>
+						</li>
+						<li>
+							<a rel="nofollow" data-method="delete" href="/customers/sign_out">Sair</a>
+						</li>
+					</ul>
+				</div>
+				<button name="button" type="button" class="btn-rest-cart " data-href="/SP/SB/checkout/v2" id="customer-cart-proceed-to-checkout-btn">
+					<span class="i-shop"></span>
+					<span id="customer-cart-total-items"></span>
+				</button>
+			</div>
+		</div>-->
 		<span>
 			<a href="index.html">Entre</a> ou <a href="index.html">Cadastre-se</a>
 		</span>
@@ -617,7 +671,11 @@
 			</div>
 		</div>
 		<footer>
-			<div></div>
+			<div class="social-nw">
+				<a href="https://www.facebook.com/sushibetadelivery/" target="_blank"><span class="i-facebook"></span></a>
+				<a href="https://www.instagram.com/sushibeta/" target="_blank"><span class="i-instagram"></span></a>
+				<a href="https://twitter.com/sushibeta" target="_blank"><span class="i-twitter"></span></a>
+			</div>
 			<div>
 				<a href="#">Quem Somos</a>
 				<a href="#">Termos e condições de uso</a>
@@ -635,12 +693,13 @@
 	
 <!-- 	Modal -->
 	<div class="modal fade pdt-modal" id="pdtModal" tabindex="-1" role="dialog" aria-labelledby="pdtModalLabel">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="i-remove"></span></button>
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="pdt-container">
 					<div class="pdt-image">
-						<img  src="https://cdn.zipster.co/products/detail/detail_41c7173e-ec35-4c69-9f33-1bd6a4d54582.jpg" alt="imagem do produto"/>
+						<!--<img  src="https://cdn.zipster.co/products/detail/detail_41c7173e-ec35-4c69-9f33-1bd6a4d54582.jpg" alt="imagem do produto"/>-->
+						<img  src="https://cdn.zipster.co/products/detail/detail_da464481-338a-4ddc-b893-89bcc289bdb1.jpg" alt="imagem do produto"/>
 					</div>
 					<div class="pdt-info">
 						<h4>Rock'N Roll</h4>
