@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "../fonts/sushi-beta/style.css";
 
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -17,6 +18,10 @@ a {
 	color: $cinza-claro;
 	text-decoration: none;
 	@extend %transicao;
+	
+	&:hover {
+		color: $preto;
+	}
 }
 * {
 	box-sizing: border-box;
@@ -51,17 +56,10 @@ header {
 
 }
 .small-header {
-	/*background-color: #ffffff;*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1.00)), to(rgba(255, 255, 255, 0.00)));
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
-	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
-	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
-	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
-	background-image: linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.00));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ffffff');
+	background: rgba(255, 255, 255, 0.8);
 	
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .wrap-page {
 	margin-top: 160px;
@@ -129,15 +127,36 @@ aside {
 }
 .menu {
 	position: sticky;
-	list-style: none;
-	left: 0;
-	padding: 0;
 	top: 150px;
+	margin-bottom: 40px;
+	
+	ul {
+		list-style: none;
+		left: 0;
+		margin-bottom: 40px;
+		padding: 0;
+	}
+	li a {
+		display: block;
+		padding: 10px 0;
+	}
 }
-.menu li a {
-	display: block;
-	padding: 10px 0;
+
+.download-app {
+	
+	h3 {
+		font-family: $fonte-secundaria;
+		font-size: 0.8rem;
+		letter-spacing: 0.1rem;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	a {
+		font-size: 1.5rem;
+		padding-right: 10%;
+	}
 }
+
 .grid-container {
 }
 .grid {
@@ -198,7 +217,7 @@ aside {
 		max-width: 20%;
 	}
 	@media (min-width: $screen-xl-min) {
-		margin-right: 5vw;
+		margin-right: 2.5vw;
 		max-width: 300px;
 	}
 }
@@ -428,5 +447,13 @@ footer {
 	
 	> div {
 		width: 25%;	
+	}
+	
+	@media (max-width: $screen-xs-max) {
+		flex-direction: column;
+		
+		> div {
+			width: 100%;	
+		}
 	}
 }
