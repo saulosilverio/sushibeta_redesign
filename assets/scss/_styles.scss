@@ -35,12 +35,14 @@ header {
 	
 	> span {
 		color: $cinza-claro;
-	}
-	> span a {
-		color: $preto;
-	}
-	> span a:hover {
-		color: $cinza-escuro;
+		
+		a {
+			color: $preto;
+			
+			&:hover {
+				color: $cinza-escuro;
+			}
+		}
 	}
 	
 	@media (max-width: $screen-xs-max) {
