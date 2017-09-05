@@ -126,7 +126,7 @@
 							</div>
 						</div>
 						<div class="pdt">
-							<a>
+							<a data-toggle="modal" data-target="#pdtModalAdded">
 								<img  src="https://cdn.zipster.co/products/detail/detail_81270b7c-2260-459e-b56a-572c889a0a14.jpg" alt="imagem do produto"/>
 								<div class="added-qtd">
 									1 No carrinho
@@ -691,7 +691,7 @@
 		</footer>
 	</div>
 	
-<!-- 	Modal -->
+	<!-- Modal -->
 	<div class="modal fade pdt-modal" id="pdtModal" tabindex="-1" role="dialog" aria-labelledby="pdtModalLabel">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="i-remove"></span></button>
 		<div class="modal-dialog" role="document">
@@ -704,10 +704,44 @@
 					<div class="pdt-info">
 						<h4>Rock'N Roll</h4>
 						<p>Combinação divertida de Rolls variados , são 2 tekkamaki, 2 sakemaki, 2 kappamaki, 4 uramaki California, 4 Uramaki spicy tuna, 4 Uramaki salmon skin</p>
-						<span class="price">R$49,00</span>
+						<p class="dish-flt">
+							<span class="pepper"><span class="i-pepper"></span> Picante</span>
+							<span class="seeds-free"><span class="i-seeds-free"></span> Sem sementes</span>	
+						</p>
+						<div><span class="price">R$49,00</span> <span class="stock-info">/ 4 restantes</span></div>
 						
 						<div class="pdt-actions">
 							<button class="btn-comprar btn-lg">Comprar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal Added-->
+	<div class="modal fade pdt-modal" id="pdtModalAdded" tabindex="-1" role="dialog" aria-labelledby="pdtModalLabel">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="i-remove"></span></button>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="pdt-container">
+					<div class="pdt-image">
+						<!--<img  src="https://cdn.zipster.co/products/detail/detail_41c7173e-ec35-4c69-9f33-1bd6a4d54582.jpg" alt="imagem do produto"/>-->
+						<img  src="https://cdn.zipster.co/products/detail/detail_da464481-338a-4ddc-b893-89bcc289bdb1.jpg" alt="imagem do produto"/>
+						<div class="added-qtd">1 No carrinho</div>
+					</div>
+					<div class="pdt-info">
+						<h4>Rock'N Roll</h4>
+						<p>Combinação divertida de Rolls variados , são 2 tekkamaki, 2 sakemaki, 2 kappamaki, 4 uramaki California, 4 Uramaki spicy tuna, 4 Uramaki salmon skin</p>
+						<p class="dish-flt">
+							<span class="pepper"><span class="i-pepper"></span> Picante</span>
+							<span class="seeds-free"><span class="i-seeds-free"></span> Sem sementes</span>	
+						</p>
+						<div><span class="price">R$49,00</span> <span class="stock-info">/ 4 restantes</span></div>
+						
+						<div class="pdt-actions">
+							<button class="btn-comprar btn-lg">Comprar</button>
+							<button class="btn-remove btn-lg"><span class="i-minus"></span></button>
 						</div>
 					</div>
 				</div>

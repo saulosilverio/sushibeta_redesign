@@ -655,6 +655,36 @@
     {
       "icon": {
         "paths": [
+          "M25.2 537.2h1209.618c13.918 0 25.2-11.283 25.2-25.2s-11.283-25.2-25.2-25.2h-1209.618c-13.918 0-25.2 11.283-25.2 25.2s11.283 25.2 25.2 25.2z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 1260,
+        "grid": 16,
+        "tags": [
+          "minus"
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 38,
+        "id": 31,
+        "prevSize": 24,
+        "code": 59680,
+        "name": "minus"
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 24
+    },
+    {
+      "icon": {
+        "paths": [
           "M102.154 551.385h1102.769c21.752 0 39.385-17.633 39.385-39.385s-17.633-39.385-39.385-39.385h-1102.769c-21.752 0-39.385 17.633-39.385 39.385s17.633 39.385 39.385 39.385v0z",
           "M484.151 11.535l-472.615 472.615c-15.381 15.381-15.381 40.318 0 55.698l472.615 472.615c15.381 15.381 40.318 15.381 55.698 0s15.381-40.318 0-55.698l-472.615-472.615v55.698l472.615-472.615c15.381-15.381 15.381-40.318 0-55.698s-40.318-15.381-55.698 0v0z"
         ],
@@ -677,7 +707,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 24
+      "iconIdx": 25
     },
     {
       "icon": {
@@ -703,7 +733,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 25
+      "iconIdx": 26
     },
     {
       "icon": {
@@ -729,7 +759,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 26
+      "iconIdx": 27
     },
     {
       "icon": {
@@ -755,7 +785,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 27
+      "iconIdx": 28
     },
     {
       "icon": {
@@ -781,7 +811,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 28
+      "iconIdx": 29
     },
     {
       "icon": {
@@ -807,7 +837,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 29
+      "iconIdx": 30
     },
     {
       "icon": {
@@ -842,7 +872,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 30
+      "iconIdx": 31
     },
     {
       "icon": {
@@ -868,7 +898,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 31
+      "iconIdx": 32
     }
   ],
   "height": 1024,
@@ -896,7 +926,10 @@
       "embed": false,
       "noie8": true,
       "ie7": false,
-      "showMetrics": false
+      "showMetrics": false,
+      "showMetadata": false,
+      "showVersion": false,
+      "showSelector": false
     },
     "imagePref": {
       "prefix": "icon-",
