@@ -5,12 +5,18 @@ $verde: #0EB44C;
 $vermelho: #FF5656;
 $vermelho-escuro: darken($vermelho, 10);
 
-// Tipos
+// Types
 $fonte-secundaria: 'Roboto', sans-serif;
 
-// Botoes
+// Buttons
 $altura-botao: 30px;
 $altura-botao-lg: 60px;
+
+// Filter colors
+$pepper: #EB354B;
+$gluten-free: #D49D6C;
+$seeds-free: #98AA51;
+$vegetarian: #4ACF74;
 
 // Breakpoints
 $screen-xl:                  1600 + 1px !default;
