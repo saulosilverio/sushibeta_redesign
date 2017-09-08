@@ -304,8 +304,12 @@ aside {
 		padding: 0;
 	}
 	li a {
-		display: block;
+		display: flex;
 		padding: 10px 0;
+		
+		span {
+			margin-right: 5px;
+		}
 	}
 }
 
