@@ -293,7 +293,7 @@ aside {
 		background: none;
 		box-shadow: none;
 		padding: 0 5vw 0 0;
-		position: relative;
+		position: static;
 		height: auto;
 		min-height: 0;
 		opacity: 1;
@@ -343,20 +343,21 @@ aside {
 	
 	@media (min-width: $screen-md-min) {
 		position: sticky;
+		position: -webkit-sticky;
 		top: 150px;
 	}
 }
 
 .btn-filter {
-	background-color: #f76b4c;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(247, 107, 76)), to(rgb(238, 77, 75)));
-	background-image: -webkit-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
-	background-image: -moz-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
-	background-image: -o-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
-	background-image: -ms-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
-	background-image: linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(249, 249, 249)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(249, 249, 249));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(249, 249, 249));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(249, 249, 249));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(249, 249, 249));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(249, 249, 249));
 	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
-	color: #fff;
+	color: $preto;
 	display: flex;
 	font-size: 1.1rem;
 	align-items: center;
