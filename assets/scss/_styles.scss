@@ -268,25 +268,56 @@ h2 {
 	}
 }
 aside {
+	background: #fff;
+	box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
 	width: 20vw;
-	min-width: 200px;
-	position: relative;
-	padding-right: 5vw;
+	min-width: 250px;
+	padding: 5vw;
+	position: fixed;
+	
+	height: 100%;
+	min-height: 100vh;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	
+	    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 	
 	@media (max-width: $screen-xs-max) {
-		display: none;
-	}
-	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 		
+	}
+	@media (min-width: $screen-sm-min) {
+		background: none;
+		box-shadow: none;
+		padding: 0 5vw 0 0;
+		position: relative;
+		height: auto;
+		min-height: 0;
+		opacity: 1;
+		
+		-ms-transform: none;
+    -webkit-transform: none;
+            transform: none;
 	}
 	@media (min-width: $screen-lg-min) {
 		width: 25vw;
 	}
 	
 }
+.open-menu {
+		opacity: 1;
+		-ms-transform: translateX(0%); /* IE 9 */
+    -webkit-transform: translateX(0%); /* Chrome, Safari, Opera */
+            transform: translateX(0%);
+}
+
 .menu {
-	position: sticky;
-	top: 150px;
+	position: relative;
 	margin-bottom: 40px;
 	
 	h3 {
@@ -310,6 +341,37 @@ aside {
 		span {
 			margin-right: 5px;
 		}
+	}
+	
+	@media (min-width: $screen-md-min) {
+		position: sticky;
+		top: 150px;
+	}
+}
+
+.btn-filter {
+	background-color: #f76b4c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(247, 107, 76)), to(rgb(238, 77, 75)));
+	background-image: -webkit-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	background-image: -moz-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	background-image: -o-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	background-image: -ms-linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	background-image: linear-gradient(top, rgb(247, 107, 76), rgb(238, 77, 75));
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	display: flex;
+	font-size: 1.1rem;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	height: 40px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 40px;
+	
+	@media (min-width: $screen-sm-min) {
+		display: none;
 	}
 }
 

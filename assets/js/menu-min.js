@@ -1,0 +1,1 @@
+initMenu=function(e){$("#"+e).toggleClass("open-menu")},$("html").click(function(e){var n=$(e.target);!$(n).hasClass("i-filter")&&$("#menu").hasClass("open-menu")&&$("#menu").removeClass("open-menu")});

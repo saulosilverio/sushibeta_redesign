@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'SushiBeta';
   src:
-    url('fonts/SushiBeta.woff2?3r1enw') format('woff2'),
-    url('fonts/SushiBeta.ttf?3r1enw') format('truetype'),
-    url('fonts/SushiBeta.woff?3r1enw') format('woff'),
-    url('fonts/SushiBeta.svg?3r1enw#SushiBeta') format('svg');
+    url('fonts/SushiBeta.woff2?cctrlm') format('woff2'),
+    url('fonts/SushiBeta.ttf?cctrlm') format('truetype'),
+    url('fonts/SushiBeta.woff?cctrlm') format('woff'),
+    url('fonts/SushiBeta.svg?cctrlm#SushiBeta') format('svg');
   font-weight: normal;
   font-style: normal;
 }
